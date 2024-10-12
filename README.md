@@ -28,8 +28,8 @@ This is a FastAPI-based web service that allows you to upload a PDF (such as an 
 
 1. Clone this repository or download the code:
    ```bash
-   git clone https://github.com/yourusername/pdf-ca-extractor.git
-   cd pdf-ca-extractor
+   git clone https://github.com/singhravi/pdf_data_extractor.git
+   cd pdf_data_extractor
    Create a virtual environment:
    ```
 
@@ -117,4 +117,3 @@ Copy code
 - **Dependencies**: Lists the main Python packages required by the application.
 - **Running Tests**: Mentions how to test the API using Postman, Curl, or the interactive FastAPI docs.
 
-You can adjust the repository link, API response example, and other details based on your specific project. Let me know if you'd like further customization!
