@@ -80,9 +80,9 @@ json
 {
 "CA Number": "1234 5678 9012"
 }
+
 File Structure
-text
-Copy code
+
 pdf_data_extractor/
 │
 |** templates # folder that contains the jinja2 html files
@@ -92,20 +92,19 @@ pdf_data_extractor/
 ├── README.md # Documentation
 └── pdfvenv/ # Virtual environment directory (not included in the repository)
 
-Dependencies
-FastAPI: Web framework for building APIs.
-Uvicorn: ASGI server for serving FastAPI applications.
-pdfplumber: Library to extract text from PDFs.
-pytesseract: Python binding for Tesseract OCR.
-Pillow: Python Imaging Library, required for handling images.
+# Dependencies
+- FastAPI: Web framework for building APIs.
+- Uvicorn: ASGI server for serving FastAPI applications.
+- pdfplumber: Library to extract text from PDFs.
+- pytesseract: Python binding for Tesseract OCR.
+- Pillow: Python Imaging Library, required for handling images.
+
 Running Tests
 You can test the API using Postman, Curl, or the interactive docs (/docs).
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-markdown
-Copy code
 
 ### Key Sections of the `README.md`:
 
