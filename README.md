@@ -82,7 +82,7 @@ json
 }
 
 File Structure
-
+```
 pdf_data_extractor/
 │
 |** templates # folder that contains the jinja2 html files
@@ -91,7 +91,7 @@ pdf_data_extractor/
 ├── requirements.txt # Python dependencies
 ├── README.md # Documentation
 └── pdfvenv/ # Virtual environment directory (not included in the repository)
-
+```
 # Dependencies
 - FastAPI: Web framework for building APIs.
 - Uvicorn: ASGI server for serving FastAPI applications.
@@ -99,10 +99,10 @@ pdf_data_extractor/
 - pytesseract: Python binding for Tesseract OCR.
 - Pillow: Python Imaging Library, required for handling images.
 
-Running Tests
+# Running Tests
 You can test the API using Postman, Curl, or the interactive docs (/docs).
 
-License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
