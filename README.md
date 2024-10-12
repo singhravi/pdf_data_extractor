@@ -12,53 +12,53 @@ This is a FastAPI-based web service that allows you to upload a PDF (such as an 
 
 ## Prerequisites
 
-1. **Python 3.7+** installed.
-2. **Tesseract OCR** installed on your machine:
+1. ** Python 3.7+** installed.
+2. ** Tesseract OCR** installed on your machine:
    - **Windows**: Download and install [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract/wiki).
-   - **Linux** (Ubuntu):
-     ```bash
+   - ** Linux** (Ubuntu):
+     ``` bash
      sudo apt install tesseract-ocr
      ```
-   - **macOS** (using Homebrew):
-     ```bash
+   - ** macOS** (using Homebrew):
+     ``` bash
      brew install tesseract
      ```
 
 ## Installation
 
 1. Clone this repository or download the code:
-   ```bash
+   ``` bash
    git clone https://github.com/singhravi/pdf_data_extractor.git
    cd pdf_data_extractor
    Create a virtual environment:
    ```
 
-bash
-Copy code
-python3 -m venv pdfvenv
-source pdfvenv/bin/activate # On Windows: pdfvenv\Scripts\activate
-Install the required dependencies:
+2. Create virtual environment
+ 
+`python3 -m venv pdfvenv`
+# On MacBook  `source pdfvenv/bin/activate`
+# On Windows: `pdfvenv\Scripts\activate`
 
-bash
-Copy code
-pip install -r requirements.txt
+3. Install the required dependencies:
+
+
+`pip install -r requirements.txt`
+
 Verify that Tesseract is installed correctly:
 
-bash
-Copy code
-tesseract --version
-Usage
+`tesseract --version`
+
+4. Usage
 Run the FastAPI server using Uvicorn:
 
-bash
-Copy code
-uvicorn main:app --reload
+
+`uvicorn main:app --reload`
+
 The --reload option will automatically reload the server when you make code changes.
 Open your browser and navigate to the interactive API docs:
 
-arduino
-Copy code
-http://127.0.0.1:8000/docs
+(App)[http://127.0.0.1:8000/docs]
+
 Here, you can upload a PDF file (e.g., an electricity bill) to extract the CA number.
 
 API Endpoints
@@ -67,16 +67,16 @@ POST /extract-ca-number/
 Upload a PDF file to extract the CA number from it. The request should include the file in the form-data format.
 
 Example Request
-bash
-Copy code
-curl -X 'POST' \
+
+`curl -X 'POST' \
  'http://127.0.0.1:8000/extract-ca-number/' \
  -H 'accept: application/json' \
  -H 'Content-Type: multipart/form-data' \
- -F 'file=@path_to_your_electricity_bill.pdf'
+ -F 'file=@path_to_your_electricity_bill.pdf'`
+
 Example Response
 json
-Copy code
+
 {
 "CA Number": "1234 5678 9012"
 }
