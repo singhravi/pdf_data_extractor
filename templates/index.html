@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Number Extractor</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      input[type="file"] {
+        display: block;
+        margin: 20px 0;
+      }
+      .result {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #e0ffe0;
+        border: 1px solid #3cb371;
+        color: #2e8b57;
+      }
+      .error {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #ffe0e0;
+        border: 1px solid #ff6347;
+        color: #d63031;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload PDF to Extract Aadhar Number</h1>
+      <form
+        action="/extract-aadhar-number/"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file" accept="application/pdf" required />
+        <button type="submit">Upload PDF</button>
+      </form>
+      {% if adhar_info %}
+      <div class="result"><strong>Aadhar Number:</strong> {{ adhar_info }}</div>
+      {% endif %} {% if error %}
+      <div class="error"><strong>Error:</strong> {{ error }}</div>
+      {% endif %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+pdfvenv/
+pdfenv/
+ENV/
+.pdfvenv/
+.ENV/
+
+# macOS
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# PIP files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Pytest
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# FastAPI generated files
+*.db
+*.sqlite3
+
+# Log files
+*.log
+
+# Ignore .env files containing environment variables
+.env
+.env.*
+
+# Ignore Tesseract OCR configs (if created)
+tessdata/
+tesseract.log
+
+# Ignore Uvicorn/Starlette logs
+*.log
+*.pid
+
+# Ignore requirements.txt auto-generated files
+requirements.txt.lock
