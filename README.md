@@ -85,8 +85,8 @@ File Structure
 ```
 pdf_data_extractor/
 │
-|** templates # folder that contains the jinja2 html files
-|** docs # folder containing the sample PDF file
+|__ templates # folder that contains the jinja2 html files
+|__ docs # folder containing the sample PDF file
 ├── main.py # The FastAPI application code
 ├── requirements.txt # Python dependencies
 ├── README.md # Documentation
